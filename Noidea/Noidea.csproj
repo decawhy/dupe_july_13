@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1191AECC-7EB3-4E4F-8CDB-3CDD6B3A33F4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Noidea</RootNamespace>
+    <AssemblyName>Noidea</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>Noidea.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\..\..\Downloads\dubbe\dupedreamsold\dupe-server\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Downloads\dubbe\dupedreamsold\dupe-server\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PortableRealm">
+      <HintPath>..\..\..\..\Downloads\dubbe\dupedreamsold\dupe-server\PortableRealm.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.HttpListener">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Net.HttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebClient">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Net.WebClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Private.CoreLib">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Private.CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.4\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\ApiCallback.cs" />
+    <Compile Include="API\ApiExtensions.cs" />
+    <Compile Include="API\ApiServer.cs" />
+    <Compile Include="API\Callbacks\GetLogin.cs" />
+    <Compile Include="API\Callbacks\Subscribe.cs" />
+    <Compile Include="API\DupeRequest.cs" />
+    <Compile Include="API\ReactApi.cs" />
+    <Compile Include="API\Response.cs" />
+    <Compile Include="Core\Client.cs" />
+    <Compile Include="Core\Component.cs" />
+    <Compile Include="Core\Components\ActualDupe.cs" />
+    <Compile Include="Core\Components\BertsDupe.cs" />
+    <Compile Include="Core\Components\ClaimTypes.cs" />
+    <Compile Include="Core\Components\CoreLoop.cs" />
+    <Compile Include="Core\Components\Dupe.cs" />
+    <Compile Include="Core\Components\DupeSlicer.cs" />
+    <Compile Include="Core\Components\DupeState.cs" />
+    <Compile Include="Core\Components\DupeType.cs" />
+    <Compile Include="Core\Components\EggDupe.cs" />
+    <Compile Include="Core\Components\FameExploit.cs" />
+    <Compile Include="Core\Components\GameLoader.cs" />
+    <Compile Include="Core\Components\Invitation.cs" />
+    <Compile Include="Core\Components\KeyDupe.cs" />
+    <Compile Include="Core\Components\NewDupe.cs" />
+    <Compile Include="Core\Components\PetFactory.cs" />
+    <Compile Include="Core\Components\PetFeed.cs" />
+    <Compile Include="Core\Components\PetFeedState.cs" />
+    <Compile Include="Core\Components\PotionDupe.cs" />
+    <Compile Include="Core\Components\PotState.cs" />
+    <Compile Include="Core\Components\redacted.cs" />
+    <Compile Include="Core\Components\ScatterState.cs" />
+    <Compile Include="Core\Components\ServerCrash.cs" />
+    <Compile Include="Core\Components\SlowerDupe.cs" />
+    <Compile Include="Core\Components\StateKey.cs" />
+    <Compile Include="Core\Components\TransferMule.cs" />
+    <Compile Include="Core\Components\TransferToMules.cs" />
+    <Compile Include="Core\Components\VLDupe.cs" />
+    <Compile Include="Core\Components\World.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Classes.cs" />
+    <Compile Include="Models\GameObject.cs" />
+    <Compile Include="Models\Server.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Services\Factory.cs" />
+    <Compile Include="Services\NameService.cs" />
+    <Compile Include="Services\RSA.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
